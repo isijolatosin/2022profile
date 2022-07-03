@@ -1,38 +1,184 @@
-.App {
-  text-align: center;
+.homeBg {
+	background-color: #bba371;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+.custome-font {
+	font-family: 'Shadows Into Light', cursive;
+}
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+.font_cursive2 {
+	font-family: 'Cedarville Cursive', cursive;
+}
+.social-media-list {
+	display: flex;
+}
+.social-media-list {
+	display: flex;
+}
+.social-media-list a {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	display: grid;
+	place-items: center;
+	border-radius: 50%;
+	font-size: 28px;
+	text-decoration: none;
+	color: #fff;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+.social-media-list a:not(:last-child) {
+	margin-right: 2rem;
+}
+.social-media-list a svg {
+	transition: transform 0.3s;
+}
+.social-media-list a::before {
+	content: '';
+	position: absolute;
+	width: 115%;
+	height: 115%;
+	background-color: #3b3b3b;
+	z-index: -1;
+	transform: rotate(45deg);
+	top: -15%;
+	left: 5%;
+	transition: transform 0.3s;
+}
+.social-media-list a:hover {
+	color: #bba371;
+}
+.social-media-list a:hover svg {
+	transform: scale(1.2);
+}
+.social-media-list a:hover::before {
+	transform: rotate(45deg) translate(15%, 100%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.img-wrapper {
+	width: 250px;
+	height: 250px;
+	position: relative;
+}
+.img-wrapper img {
+	width: 100%;
+	height: 100%;
+	/* display: block; */
+	border-radius: 50%;
+	object-fit: cover;
+	opacity: 0.5;
+}
+.img-wrapper::before {
+	content: '';
+	position: absolute;
+	top: -15px;
+	left: -15px;
+	right: -15px;
+	bottom: -15px;
+	/* inset: -15px; */
+	border: 6px solid transparent;
+	border-top-color: #fff;
+	border-bottom-color: #ababab;
+	border-radius: 50%;
+	z-index: 1;
+	animation: spin 10s linear infinite;
+}
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+.fade {
+	opacity: 1;
+	animation: fade 3s linear;
+}
+@keyframes fade {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.load-wrapper {
+	width: 120px;
+	height: 60px;
+	position: absolute;
+	/* left: 50%;
+	top: 10%; */
+	transform: translate(-50%, -50%);
+}
+.circle {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	border-radius: 50%;
+	background-color: #d48d37;
+	left: 15%;
+	transform-origin: 50%;
+	animation: circle 0.5s alternate infinite ease;
+}
+.circle:nth-child(2) {
+	left: 42%;
+	animation-delay: 0.2s;
+	background-color: #ff00a2;
+}
+.circle:nth-child(3) {
+	left: auto;
+	right: 15%;
+	animation-delay: 0.3s;
+	background-color: #3300ff;
+}
+@keyframes circle {
+	0% {
+		top: 60px;
+		height: 5px;
+		border-radius: 50px 50px 25px 25px;
+		transform: scale(1.7);
+	}
+	40% {
+		height: 20px;
+		border-radius: 50%;
+		transform: scale(1);
+	}
+	100% {
+		top: 0%;
+	}
 }
 
-.App-link {
-  color: #61dafb;
+.gallery {
+	width: 65vw;
+	height: 50vmin;
+	gap: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img {
+	flex: 1;
+	transition: all 0.3s;
+	border-radius: 10px;
+}
+.img:hover {
+	flex: 4;
+	mask-image: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.65) 100%
+	);
+	-webkit-mask-image: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.65) 100%
+	);
+}
+.img img {
+	border-radius: 10px;
+	height: 100%;
+	object-fit: cover;
+	overflow: hidden;
+	cursor: pointer;
+	transition: all 0.3s;
 }
