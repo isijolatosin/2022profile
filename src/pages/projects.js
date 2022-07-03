@@ -1,6 +1,5 @@
 import React from 'react'
 import { BsLink45Deg } from 'react-icons/bs'
-import { Link } from 'react-router-dom'
 import Layout from '../components/shared/Layout'
 
 const Projects = () => {
