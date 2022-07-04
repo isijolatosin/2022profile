@@ -22,7 +22,7 @@ const Homepage = () => {
 							<div className="tw-flex tw-flex-col tw-mt-10 md:tw-mt-0 tw-text-white md:tw-ml-10">
 								<span className="tw-text-2xl">Explore with Me</span>
 								<Link to="/about/oluwatosin-isijola">
-									<button className="tw-bg-white tw-text-neutral-900 tw-px-5 tw-py-1 tw-tracking-widest hover:tw-bg-black hover:tw-text-white tw-ease-in tw-duration-300 hover:tw-cursor-pointer tw-mt-5">
+									<button className="tw-bg-white tw-text-neutral-900 tw-px-5 tw-py-1 tw-tracking-widest hover:tw-bg-black hover:tw-text-[#bba371] tw-ease-in tw-duration-300 hover:tw-cursor-pointer tw-mt-5">
 										About Me
 									</button>
 								</Link>

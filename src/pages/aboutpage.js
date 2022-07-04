@@ -16,7 +16,7 @@ const Aboutpage = () => {
 			<div className="tw-bg-black tw-h-[100%] md:tw-h-[85%] tw-w-[100%] md:tw-w-[85%]">
 				<Layout>
 					{isShow ? (
-						<div className="fade tw-flex tw-flex-col md:tw-flex-row tw-justify-between tw-w-[90%] md:tw-w-[60%] tw-mx-auto tw-mt-20">
+						<div className="fade tw-flex tw-flex-col md:tw-flex-row tw-justify-between tw-w-[90%] md:tw-w-[70%] tw-mx-auto tw-mt-20">
 							<div className="tw-mt-20 md:tw-mt-0 tw-text-white tw-w-[100%] md:tw-w-[50%] md:tw-order-1 tw-order-2">
 								<h1 className="custome-font tw-uppercase tw-text-[25px] md:tw-text-[50px]">
 									oluwatosin isijola

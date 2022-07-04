@@ -26,7 +26,7 @@
 	border-radius: 50%;
 	font-size: 28px;
 	text-decoration: none;
-	color: #fff;
+	color: #bba371;
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
@@ -50,7 +50,7 @@
 	transition: transform 0.3s;
 }
 .social-media-list a:hover {
-	color: #bba371;
+	color: #fff;
 }
 .social-media-list a:hover svg {
 	transform: scale(1.2);
@@ -153,8 +153,8 @@
 }
 
 .gallery {
-	width: 65vw;
-	height: 50vmin;
+	/* width: 65vw;
+	height: 50vmin; */
 	gap: 10px;
 }
 .img {
