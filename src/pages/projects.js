@@ -116,8 +116,8 @@ const Projects = () => {
 											/>
 											{linkKey === item?.id && linkShow && (
 												<a href={item.link} target="_blank" rel="noreferrer">
-													<div className="tw-shadow-lg tw-flex tw-bg-white tw-text-black tw-text-[12px] tw-tracking-wider tw-absolute tw-bottom-[20px] tw-items-center tw-px-5">
-														<BsLink45Deg size={35} />
+													<div className="tw-shadow-lg tw-flex tw-bg-black tw-text-white tw-text-[14px] tw-tracking-wider tw-absolute tw-bottom-[20px] tw-items-center tw-px-5 tw-font-bold">
+														<BsLink45Deg size={25} />
 														<span>{item?.name}</span>
 													</div>
 												</a>
