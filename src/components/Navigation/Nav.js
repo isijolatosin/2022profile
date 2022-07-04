@@ -1,7 +1,7 @@
 import React from 'react'
 import { AiOutlineSisternode } from 'react-icons/ai'
 import { BsFillPersonFill } from 'react-icons/bs'
-import { HiMenuAlt2 } from 'react-icons/hi'
+import { HiMenuAlt3 } from 'react-icons/hi'
 import { MdWork } from 'react-icons/md'
 import { FaPeopleArrows } from 'react-icons/fa'
 import { Link, useNavigate } from 'react-router-dom'
@@ -46,7 +46,7 @@ function Nav() {
 				<label for="input" className="button">
 					{/* <span className="text">My setting</span> */}
 					<span className="text">
-						<HiMenuAlt2 />
+						<HiMenuAlt3 />
 					</span>
 				</label>
 				<div className="menu">

@@ -53,7 +53,7 @@ const Aboutpage = () => {
 									Stay connected and let the good work begin.
 								</h3>
 								<Link to="/contact/oluwatosin-isijola">
-									<button className="tw-bg-white tw-text-neutral-900 tw-px-5 tw-py-1 tw-tracking-widest hover:tw-bg-black hover:tw-text-white tw-ease-in tw-duration-300 hover:tw-cursor-pointer">
+									<button className="tw-bg-white tw-text-neutral-900 tw-px-5 tw-py-1 tw-tracking-widest hover:tw-bg-black hover:tw-text-[#bba371] tw-ease-in tw-duration-300 hover:tw-cursor-pointer">
 										{email}
 									</button>
 								</Link>
