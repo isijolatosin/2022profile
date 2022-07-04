@@ -52,19 +52,19 @@ function Nav() {
 				<div className="menu">
 					<ul>
 						<li>
-							<a href="/about/oluwatosin-isijola">
+							<Link to="/about/oluwatosin-isijola">
 								<BsFillPersonFill size={25} />
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a href="/work">
+							<Link to="/work">
 								<MdWork size={25} />
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a href="/contact/oluwatosin-isijola">
+							<Link to="/contact/oluwatosin-isijola">
 								<FaPeopleArrows size={25} />
-							</a>
+							</Link>
 						</li>
 					</ul>
 				</div>
