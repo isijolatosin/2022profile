@@ -21,11 +21,12 @@ const Projects = () => {
 			name: 'modelEst',
 		},
 		{
-			url: airbnb,
-			link: 'https://airbnb-clone-32e27.web.app/',
+			url: netflix,
+			link: 'https://netflix-clone-ced2a.web.app/',
 			id: '2',
-			name: 'AirBnB-Clone',
+			name: 'Netflix-Clone',
 		},
+
 		{
 			url: hairposey,
 			link: 'https://www.hairposey.com/',
@@ -44,18 +45,17 @@ const Projects = () => {
 			id: '5',
 			name: 'pvg-internationalS',
 		},
-
-		{
-			url: netflix,
-			link: 'https://netflix-clone-ced2a.web.app/',
-			id: '6',
-			name: 'Netflix-Clone',
-		},
 		{
 			url: joel,
 			link: 'https://joelarueyastudio.netlify.app/',
-			id: '7',
+			id: '6',
 			name: 'joelarueyastudio',
+		},
+		{
+			url: airbnb,
+			link: 'https://airbnb-clone-32e27.web.app/',
+			id: '7',
+			name: 'AirBnB-Clone',
 		},
 	]
 
