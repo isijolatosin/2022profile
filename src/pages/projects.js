@@ -76,8 +76,8 @@ const Projects = () => {
 			<div className="tw-bg-black tw-h-[100%] md:tw-h-[85%] tw-w-[100%] md:tw-w-[85%]">
 				<Layout>
 					{isShow ? (
-						<div className="tw-w-[90%] md:tw-w-[90%] md:tw-mx-auto tw-mx-auto tw-mt-[70px] md:tw-mt-[30px]">
-							<h1 className="tw-text-white tw-mb-[50px] md:tw-mb-[70px] tw-text-2xl">
+						<div className="tw-w-[90%] md:tw-w-[90%] md:tw-mx-auto tw-mx-auto tw-mt-[30px] md:tw-mt-[30px]">
+							<h1 className="tw-text-white tw-mb-[30px] md:tw-mb-[70px] tw-text-2xl">
 								Projects
 							</h1>
 							<div className="fade tw-relative gallery tw-hidden lg:tw-w-[65vw] lg:tw-h-[50vmin] lg:tw-flex tw-mx-auto">
@@ -108,7 +108,7 @@ const Projects = () => {
 											key={item?.id}
 											onMouseOver={() => handleShowLink(item.id)}
 											onMouseLeave={handleHideLink}
-											className="img tw-relative tw-w-[180px] tw-h-[250px] tw-mb-10 tw-mx-auto">
+											className="img tw-relative tw-w-[180px] tw-h-[250px] tw-mx-auto">
 											<img
 												src={item.url}
 												alt=""
