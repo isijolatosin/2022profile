@@ -76,7 +76,7 @@ const Contact = () => {
 											value={contactInput.name}
 											onChange={handleContactInput}
 											placeholder="Full Name"
-											className="tw-w-[100%] tw-mb-5 tw-text-neutral-500 tw-font-light tw-bg-transparent tw-block tw-px-3 tw-py-2 tw-border-neutral-900 tw-rounded-[2px] tw-text-xs tw-border-[1px] tw-placeholder-neutral-300 focus:tw-outline-none focus:tw-border-black focus:tw-ring-1 focus:tw-ring-black disabled:tw-bg-neutral-50 disabled:tw-text-neutral-500 disabled:tw-border-neutral-200 disabled:tw-shadow-none invalid:tw-border-pink-500 invalid:tw-text-pink-600 focus:tw-invalid:border-pink-500 focus:tw-invalid:ring-pink-500 tw-outline-0"
+											className="tw-w-[100%] tw-mb-5 tw-text-[#bba371] tw-font-light tw-bg-transparent tw-block tw-px-3 tw-py-2 tw-border-neutral-900 tw-rounded-[2px] tw-text-xs tw-border-[1px] tw-placeholder-neutral-300 focus:tw-outline-none focus:tw-border-black focus:tw-ring-1 focus:tw-ring-black disabled:tw-bg-neutral-50 disabled:tw-text-neutral-500 disabled:tw-border-neutral-200 disabled:tw-shadow-none invalid:tw-border-pink-500 invalid:tw-text-pink-600 focus:tw-invalid:border-pink-500 focus:tw-invalid:ring-pink-500 tw-outline-0"
 										/>
 										<input
 											type="text"
@@ -85,7 +85,7 @@ const Contact = () => {
 											value={contactInput.email}
 											onChange={handleContactInput}
 											placeholder="Email"
-											className="tw-w-[100%] tw-mb-5 tw-text-neutral-500 tw-font-light tw-bg-transparent tw-block tw-px-3 tw-py-2 tw-border-neutral-900 tw-rounded-[2px] tw-text-xs tw-border-[1px] tw-placeholder-neutral-300 focus:tw-outline-none focus:tw-border-black focus:tw-ring-1 focus:tw-ring-black disabled:tw-bg-neutral-50 disabled:tw-text-neutral-500 disabled:tw-border-neutral-200 disabled:tw-shadow-none invalid:tw-border-pink-500 invalid:tw-text-pink-600 focus:tw-invalid:border-pink-500 focus:tw-invalid:ring-pink-500 tw-outline-0"
+											className="tw-w-[100%] tw-mb-5 tw-text-[#bba371] tw-font-light tw-bg-transparent tw-block tw-px-3 tw-py-2 tw-border-neutral-900 tw-rounded-[2px] tw-text-xs tw-border-[1px] tw-placeholder-neutral-300 focus:tw-outline-none focus:tw-border-black focus:tw-ring-1 focus:tw-ring-black disabled:tw-bg-neutral-50 disabled:tw-text-neutral-500 disabled:tw-border-neutral-200 disabled:tw-shadow-none invalid:tw-border-pink-500 invalid:tw-text-pink-600 focus:tw-invalid:border-pink-500 focus:tw-invalid:ring-pink-500 tw-outline-0"
 										/>
 										<input
 											type="text"
@@ -94,7 +94,7 @@ const Contact = () => {
 											value={contactInput.subject}
 											onChange={handleContactInput}
 											placeholder="subject"
-											className="tw-w-[100%] tw-mb-5 tw-text-neutral-500 tw-font-light tw-bg-transparent tw-block tw-px-3 tw-py-2 tw-border-neutral-900 tw-rounded-[2px] tw-text-xs tw-border-[1px] tw-placeholder-neutral-300 focus:tw-outline-none focus:tw-border-black focus:tw-ring-1 focus:tw-ring-black disabled:tw-bg-neutral-50 disabled:tw-text-neutral-500 disabled:tw-border-neutral-200 disabled:tw-shadow-none invalid:tw-border-pink-500 invalid:tw-text-pink-600 focus:tw-invalid:border-pink-500 focus:tw-invalid:ring-pink-500 tw-outline-0"
+											className="tw-w-[100%] tw-mb-5 tw-text-[#bba371] tw-font-light tw-bg-transparent tw-block tw-px-3 tw-py-2 tw-border-neutral-900 tw-rounded-[2px] tw-text-xs tw-border-[1px] tw-placeholder-neutral-300 focus:tw-outline-none focus:tw-border-black focus:tw-ring-1 focus:tw-ring-black disabled:tw-bg-neutral-50 disabled:tw-text-neutral-500 disabled:tw-border-neutral-200 disabled:tw-shadow-none invalid:tw-border-pink-500 invalid:tw-text-pink-600 focus:tw-invalid:border-pink-500 focus:tw-invalid:ring-pink-500 tw-outline-0"
 										/>
 										<textarea
 											id="message"
@@ -104,7 +104,7 @@ const Contact = () => {
 											value={contactInput.message}
 											onChange={handleContactInput}
 											placeholder="message..."
-											className="tw-w-[100%] tw-mb-5 tw-text-neutral-500 tw-font-light tw-bg-transparent tw-block tw-px-3 tw-py-2 tw-border-neutral-900 tw-rounded-[2px] tw-text-xs tw-border-[1px] tw-placeholder-neutral-300 focus:tw-outline-none focus:tw-border-black focus:tw-ring-1 focus:tw-ring-black disabled:tw-bg-neutral-50 disabled:tw-text-neutral-500 disabled:tw-border-neutral-200 disabled:tw-shadow-none invalid:tw-border-pink-500 invalid:tw-text-pink-600 focus:tw-invalid:border-pink-500 focus:tw-invalid:ring-pink-500 tw-outline-0"
+											className="tw-w-[100%] tw-mb-5 tw-text-[#bba371] tw-font-light tw-bg-transparent tw-block tw-px-3 tw-py-2 tw-border-neutral-900 tw-rounded-[2px] tw-text-xs tw-border-[1px] tw-placeholder-neutral-300 focus:tw-outline-none focus:tw-border-black focus:tw-ring-1 focus:tw-ring-black disabled:tw-bg-neutral-50 disabled:tw-text-neutral-500 disabled:tw-border-neutral-200 disabled:tw-shadow-none invalid:tw-border-pink-500 invalid:tw-text-pink-600 focus:tw-invalid:border-pink-500 focus:tw-invalid:ring-pink-500 tw-outline-0"
 										/>
 										<div className="text-center text-xs text-red-800">
 											{contactInput.error ? (
@@ -118,7 +118,7 @@ const Contact = () => {
 												!contactInput.subject ||
 												!contactInput.message
 											}
-											className="tw-bg-white tw-w-[30%] tw-text-black tw-py-2 tw-text-sm tw-font-light tw-tracking-wide hover:tw-bg-black tw-ease-in tw-duration-300 hover:tw-text-white"
+											className="tw-bg-white tw-w-[30%] tw-text-black tw-py-2 tw-text-sm tw-font-light tw-tracking-wide hover:tw-bg-black tw-ease-in tw-duration-300 hover:tw-text-[#bba371]"
 											type="submit">
 											Send inquiry
 										</button>

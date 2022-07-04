@@ -101,14 +101,14 @@ const Projects = () => {
 									</>
 								))}
 							</div>
-							<div className="lg:tw-hidden ">
+							<div className="lg:tw-hidden tw-grid tw-grid-cols-2 tw-gap-5 ">
 								{imgArray.map((item, idx) => (
 									<>
 										<div
 											key={item?.id}
 											onMouseOver={() => handleShowLink(item.id)}
 											onMouseLeave={handleHideLink}
-											className="img tw-relative tw-w-[300px] tw-h-[400px] tw-mb-10 tw-mx-auto">
+											className="img tw-relative tw-w-[180px] tw-h-[250px] tw-mb-10 tw-mx-auto">
 											<img
 												src={item.url}
 												alt=""
