@@ -1,7 +1,7 @@
 import React from 'react'
 import emailjs from 'emailjs-com'
 import Layout from '../components/shared/Layout'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Contact = () => {
 	const [showResponse, setShowResponse] = React.useState(false)
