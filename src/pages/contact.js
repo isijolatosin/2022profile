@@ -2,6 +2,7 @@ import React from 'react'
 import emailjs from 'emailjs-com'
 import Layout from '../components/shared/Layout'
 import { useNavigate } from 'react-router-dom'
+import SocialMedia from '../components/shared/SocialMedia'
 
 const Contact = () => {
 	const [showResponse, setShowResponse] = React.useState(false)
@@ -76,7 +77,7 @@ const Contact = () => {
 											value={contactInput.name}
 											onChange={handleContactInput}
 											placeholder="Full Name"
-											className="tw-w-[100%] tw-mb-5 tw-text-[#bba371] tw-font-light tw-bg-transparent tw-block tw-px-3 tw-py-2 tw-border-neutral-900 tw-rounded-[2px] tw-text-xs tw-border-[1px] tw-placeholder-neutral-300 focus:tw-outline-none focus:tw-border-black focus:tw-ring-1 focus:tw-ring-black disabled:tw-bg-neutral-50 disabled:tw-text-neutral-500 disabled:tw-border-neutral-200 disabled:tw-shadow-none invalid:tw-border-pink-500 invalid:tw-text-pink-600 focus:tw-invalid:border-pink-500 focus:tw-invalid:ring-pink-500 tw-outline-0"
+											className="tw-w-[100%] tw-mb-5 tw-text-[#bba371] tw-font-light tw-bg-transparent tw-block tw-px-3 tw-py-2 tw-border-neutral-900 tw-rounded-[2px] tw-text-sm tw-border-[1px] tw-placeholder-neutral-300 focus:tw-outline-none focus:tw-border-black focus:tw-ring-1 focus:tw-ring-black disabled:tw-bg-neutral-50 disabled:tw-text-neutral-500 disabled:tw-border-neutral-200 disabled:tw-shadow-none invalid:tw-border-pink-500 invalid:tw-text-pink-600 focus:tw-invalid:border-pink-500 focus:tw-invalid:ring-pink-500 tw-outline-0 tw-tracking-widest"
 										/>
 										<input
 											type="text"
@@ -85,7 +86,7 @@ const Contact = () => {
 											value={contactInput.email}
 											onChange={handleContactInput}
 											placeholder="Email"
-											className="tw-w-[100%] tw-mb-5 tw-text-[#bba371] tw-font-light tw-bg-transparent tw-block tw-px-3 tw-py-2 tw-border-neutral-900 tw-rounded-[2px] tw-text-xs tw-border-[1px] tw-placeholder-neutral-300 focus:tw-outline-none focus:tw-border-black focus:tw-ring-1 focus:tw-ring-black disabled:tw-bg-neutral-50 disabled:tw-text-neutral-500 disabled:tw-border-neutral-200 disabled:tw-shadow-none invalid:tw-border-pink-500 invalid:tw-text-pink-600 focus:tw-invalid:border-pink-500 focus:tw-invalid:ring-pink-500 tw-outline-0"
+											className="tw-w-[100%] tw-mb-5 tw-text-[#bba371] tw-font-light tw-bg-transparent tw-block tw-px-3 tw-py-2 tw-border-neutral-900 tw-rounded-[2px] tw-text-sm tw-border-[1px] tw-placeholder-neutral-300 focus:tw-outline-none focus:tw-border-black focus:tw-ring-1 focus:tw-ring-black disabled:tw-bg-neutral-50 disabled:tw-text-neutral-500 disabled:tw-border-neutral-200 disabled:tw-shadow-none invalid:tw-border-pink-500 invalid:tw-text-pink-600 focus:tw-invalid:border-pink-500 focus:tw-invalid:ring-pink-500 tw-outline-0 tw-tracking-widest"
 										/>
 										<input
 											type="text"
@@ -94,7 +95,7 @@ const Contact = () => {
 											value={contactInput.subject}
 											onChange={handleContactInput}
 											placeholder="subject"
-											className="tw-w-[100%] tw-mb-5 tw-text-[#bba371] tw-font-light tw-bg-transparent tw-block tw-px-3 tw-py-2 tw-border-neutral-900 tw-rounded-[2px] tw-text-xs tw-border-[1px] tw-placeholder-neutral-300 focus:tw-outline-none focus:tw-border-black focus:tw-ring-1 focus:tw-ring-black disabled:tw-bg-neutral-50 disabled:tw-text-neutral-500 disabled:tw-border-neutral-200 disabled:tw-shadow-none invalid:tw-border-pink-500 invalid:tw-text-pink-600 focus:tw-invalid:border-pink-500 focus:tw-invalid:ring-pink-500 tw-outline-0"
+											className="tw-w-[100%] tw-mb-5 tw-text-[#bba371] tw-font-light tw-bg-transparent tw-block tw-px-3 tw-py-2 tw-border-neutral-900 tw-rounded-[2px] tw-text-sm tw-border-[1px] tw-placeholder-neutral-300 focus:tw-outline-none focus:tw-border-black focus:tw-ring-1 focus:tw-ring-black disabled:tw-bg-neutral-50 disabled:tw-text-neutral-500 disabled:tw-border-neutral-200 disabled:tw-shadow-none invalid:tw-border-pink-500 invalid:tw-text-pink-600 focus:tw-invalid:border-pink-500 focus:tw-invalid:ring-pink-500 tw-outline-0 tw-tracking-widest"
 										/>
 										<textarea
 											id="message"
@@ -104,7 +105,7 @@ const Contact = () => {
 											value={contactInput.message}
 											onChange={handleContactInput}
 											placeholder="message..."
-											className="tw-w-[100%] tw-mb-5 tw-text-[#bba371] tw-font-light tw-bg-transparent tw-block tw-px-3 tw-py-2 tw-border-neutral-900 tw-rounded-[2px] tw-text-xs tw-border-[1px] tw-placeholder-neutral-300 focus:tw-outline-none focus:tw-border-black focus:tw-ring-1 focus:tw-ring-black disabled:tw-bg-neutral-50 disabled:tw-text-neutral-500 disabled:tw-border-neutral-200 disabled:tw-shadow-none invalid:tw-border-pink-500 invalid:tw-text-pink-600 focus:tw-invalid:border-pink-500 focus:tw-invalid:ring-pink-500 tw-outline-0"
+											className="tw-w-[100%] tw-mb-5 tw-text-[#bba371] tw-font-light tw-bg-transparent tw-block tw-px-3 tw-py-2 tw-border-neutral-900 tw-rounded-[2px] tw-text-sm tw-border-[1px] tw-placeholder-neutral-300 focus:tw-outline-none focus:tw-border-black focus:tw-ring-1 focus:tw-ring-black disabled:tw-bg-neutral-50 disabled:tw-text-neutral-500 disabled:tw-border-neutral-200 disabled:tw-shadow-none invalid:tw-border-pink-500 invalid:tw-text-pink-600 focus:tw-invalid:border-pink-500 focus:tw-invalid:ring-pink-500 tw-outline-0 tw-tracking-widest"
 										/>
 										<div className="text-center text-xs text-red-800">
 											{contactInput.error ? (
@@ -124,27 +125,30 @@ const Contact = () => {
 										</button>
 										{showResponse && (
 											<div className="tw-flex tw-flex-col tw-text-center tw-text-white">
-												<span className="tw-mt-5 tw-text-yellow-600 tw-font-light tw-tracking-widest tw-text-sm">
-													Your enquiry has been submitted to joelarueyastudio
+												<span className="tw-mt-5 tw-text-[#bba371] tw-font-light tw-tracking-widest tw-text-sm">
+													Your enquiry has been submitted to oluwatosin
 												</span>
 												<div className="tw-flex tw-flex-row tw-w-[70%] tw-mx-auto">
 													<span
 														onClick={() => {
 															navigate('/')
 														}}
-														className="tw-font-bold tw-bg-white tw-text-black hover:tw-cursor-pointer tw-mx-auto tw-text-[12px] tw-mt-5 tw-px-5 tw-py-1 hover:tw-bg-black hover:tw-text-white tw-ease-in tw-duration-300">
+														className="tw-font-bold tw-bg-white tw-text-black hover:tw-cursor-pointer tw-mx-auto tw-text-[12px] tw-mt-5 tw-px-5 tw-py-1 hover:tw-bg-black hover:tw-text-[#bba371] tw-ease-in tw-duration-300">
 														Back to Home
 													</span>
 													<span
 														onClick={() => {
-															navigate('/projects')
+															navigate('/work')
 														}}
-														className="tw-font-bold tw-bg-white tw-text-black hover:tw-cursor-pointer tw-mx-auto tw-text-[12px] tw-mt-5 tw-px-5 tw-py-1 hover:tw-bg-black hover:tw-text-white tw-ease-in tw-duration-300">
+														className="tw-font-bold tw-bg-white tw-text-black hover:tw-cursor-pointer tw-mx-auto tw-text-[12px] tw-mt-5 tw-px-5 tw-py-1 hover:tw-bg-black hover:tw-text-[#bba371] tw-ease-in tw-duration-300">
 														Back to Work
 													</span>
 												</div>
 											</div>
 										)}
+										<div className="tw-flex tw-justify-center">
+											<SocialMedia />
+										</div>
 									</div>
 								</form>
 							</div>

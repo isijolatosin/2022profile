@@ -91,7 +91,7 @@ const Projects = () => {
 											<img src={item.url} alt="" />
 											{linkKey === item?.id && linkShow && (
 												<a href={item.link} target="_blank" rel="noreferrer">
-													<div className="tw-flex tw-bg-white tw-text-black tw-absolute tw-bottom-[20px] tw-items-center tw-px-5">
+													<div className="tw-flex tw-bg-black tw-text-white tw-font-bold tw-tracking-widest tw-absolute tw-bottom-[20px] tw-items-center tw-px-5">
 														<BsLink45Deg size={35} />
 														<span>{item?.name}</span>
 													</div>
