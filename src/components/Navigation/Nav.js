@@ -25,7 +25,7 @@ function Nav() {
 	const path = window.location.pathname.split('/')?.[1]
 
 	return (
-		<div className="tw-flex tw-flex-row tw-justify-between tw-items-center tw-m-3">
+		<div className="tw-flex tw-flex-row tw-justify-between tw-items-center tw-m-3 tw-mr-1">
 			<Link to="/" className="tw-text-[#bba371]">
 				<AiOutlineSisternode size={25} />
 			</Link>

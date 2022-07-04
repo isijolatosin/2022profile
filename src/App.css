@@ -217,9 +217,9 @@
 	overflow: hidden;
 	position: absolute;
 	z-index: 1;
-	left: 0;
+	right: 0;
 	width: 100%;
-	top: 40px;
+	top: 45px;
 }
 .icon::before,
 .icon::after {
