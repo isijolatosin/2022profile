@@ -72,8 +72,8 @@ const Projects = () => {
 	}
 
 	return (
-		<div className="homeBg custome-font lg:tw-h-screen tw-flex tw-items-center tw-justify-center">
-			<div className="tw-bg-black tw-h-[100%] md:tw-h-[85%] tw-w-[100%] md:tw-w-[85%]">
+		<div className="homeBg custome-font md:tw-h-screen tw-flex tw-items-center tw-justify-center">
+			<div className="tw-bg-black tw-h-[100%] lg:tw-h-[85%] tw-w-[100%] md:tw-w-[85%]">
 				<Layout>
 					{isShow ? (
 						<div className="tw-w-[90%] md:tw-w-[90%] md:tw-mx-auto tw-mx-auto tw-mt-[30px] md:tw-mt-[30px]">
@@ -101,7 +101,7 @@ const Projects = () => {
 									</>
 								))}
 							</div>
-							<div className="lg:tw-hidden tw-grid tw-grid-cols-2 tw-gap-3 ">
+							<div className="lg:tw-hidden tw-grid tw-grid-cols-2 md:tw-grid-cols-3 tw-gap-3 ">
 								{imgArray.map((item, idx) => (
 									<>
 										<div

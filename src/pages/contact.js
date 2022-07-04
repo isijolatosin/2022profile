@@ -58,7 +58,7 @@ const Contact = () => {
 		setIsShow(true)
 	}, 2000)
 	return (
-		<div className="homeBg custome-font tw-h-screen tw-flex tw-items-center tw-justify-center">
+		<div className="homeBg custome-font lg:tw-h-screen tw-flex tw-items-center tw-justify-center">
 			<div className="tw-bg-black tw-h-[100%] md:tw-h-[85%] tw-w-[100%] md:tw-w-[85%]">
 				<Layout>
 					{isShow ? (
