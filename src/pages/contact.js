@@ -68,13 +68,6 @@ const Contact = () => {
 							</h1>
 							<div className="">
 								<form onSubmit={handleSubmit} className="tw-mt-[60px] ">
-									<span className="text-[10px] font-light mb-2">
-										Contact -{' '}
-										<Link to="/" className="">
-											JOELARUEYASTUDIO
-										</Link>
-									</span>
-
 									<div className="">
 										<input
 											type="text"

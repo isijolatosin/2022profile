@@ -182,3 +182,106 @@
 	cursor: pointer;
 	transition: all 0.3s;
 }
+.wrapper {
+	position: relative;
+	z-index: 10;
+}
+.button {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 24px;
+	height: 60px;
+	width: 60px;
+	padding: 0 30px;
+	border-radius: 10px;
+	color: #f7f7f7f7;
+	background: #0e0b13;
+}
+.text {
+	font-size: 25px;
+}
+.icon {
+	position: relative;
+	width: 20px;
+	height: 20px;
+}
+.input {
+	position: absolute;
+	transform: scale(0);
+}
+.menu {
+	overflow: hidden;
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	width: 100%;
+	top: 40px;
+}
+.icon::before,
+.icon::after {
+	content: '';
+	position: absolute;
+	top: 6px;
+	width: 3px;
+	height: 10px;
+	background: #fff;
+	transition: all 0.3s;
+}
+.icon::before {
+	transform: translate(-5px, 0) rotate(-45deg);
+}
+.icon::after {
+	transform: translate(0, 0) rotate(45deg);
+}
+.menu ul {
+	width: 100%;
+	margin: 0;
+	padding: 24px 0;
+	background: #1f1b25;
+	border-radius: 0 0 10px 10px;
+	transform: translateY(-100%);
+	list-style: none;
+	transition: all 0.3s;
+}
+.menu li {
+	display: flex;
+	align-items: center;
+	width: inherit;
+	padding: 0 10px;
+}
+.menu li:not(:last-child) {
+	margin-bottom: 6px;
+}
+.menu li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+}
+.menu li > a {
+	padding: 20px;
+	border-radius: 8px;
+	font-size: 17px;
+	color: #f7f7f7f7;
+	cursor: pointer;
+	transition: all 0.25s;
+}
+.menu li > a:hover {
+	background: #312b3a;
+}
+.input:checked ~ .menu ul {
+	transform: translateY(0);
+}
+.input:checked ~ .button {
+	background: #0e0b13;
+}
+.input:checked ~ .button .icon::before {
+	transform: translate(-3px, 0) rotate(-45deg) scale(2);
+}
+.input:checked ~ .button .icon::after {
+	transform: translate(-3px, 0) rotate(45deg) scale(2);
+}

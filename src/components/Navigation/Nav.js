@@ -1,5 +1,9 @@
 import React from 'react'
 import { AiOutlineSisternode } from 'react-icons/ai'
+import { BsFillPersonFill } from 'react-icons/bs'
+import { HiMenuAlt2 } from 'react-icons/hi'
+import { MdWork } from 'react-icons/md'
+import { FaPeopleArrows } from 'react-icons/fa'
 import { Link, useNavigate } from 'react-router-dom'
 
 function Nav() {
@@ -19,12 +23,13 @@ function Nav() {
 		}
 	}
 	const path = window.location.pathname.split('/')?.[1]
+
 	return (
 		<div className="tw-flex tw-flex-row tw-justify-between tw-items-center tw-m-3">
 			<Link to="/" className="tw-text-neutral-500">
 				<AiOutlineSisternode size={25} />
 			</Link>
-			<div className="tw-text-white tw-flex">
+			<div className="tw-text-white md:tw-flex tw-hidden">
 				{links?.map((item) => (
 					<div
 						onClick={() => handleNav(item?.value)}
@@ -35,6 +40,34 @@ function Nav() {
 						<span>{item.value}</span>
 					</div>
 				))}
+			</div>
+			<div className="wrapper md:tw-hidden tw-mt-[-12px]">
+				<input className="input" type="checkbox" id="input" />
+				<label for="input" className="button">
+					{/* <span className="text">My setting</span> */}
+					<span className="text">
+						<HiMenuAlt2 />
+					</span>
+				</label>
+				<div className="menu">
+					<ul>
+						<li>
+							<a href="/about/oluwatosin-isijola">
+								<BsFillPersonFill size={25} />
+							</a>
+						</li>
+						<li>
+							<a href="/work">
+								<MdWork size={25} />
+							</a>
+						</li>
+						<li>
+							<a href="/contact/oluwatosin-isijola">
+								<FaPeopleArrows size={25} />
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	)
