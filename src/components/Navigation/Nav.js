@@ -26,7 +26,7 @@ function Nav() {
 
 	return (
 		<div className="tw-flex tw-flex-row tw-justify-between tw-items-center tw-m-3">
-			<Link to="/" className="tw-text-neutral-500">
+			<Link to="/" className="tw-text-[#bba371]">
 				<AiOutlineSisternode size={25} />
 			</Link>
 			<div className="tw-text-white md:tw-flex tw-hidden">
