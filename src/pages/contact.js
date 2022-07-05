@@ -119,7 +119,7 @@ const Contact = () => {
 												!contactInput.subject ||
 												!contactInput.message
 											}
-											className="tw-bg-white tw-w-[30%] tw-text-black tw-py-2 tw-text-sm tw-font-light tw-tracking-wide hover:tw-bg-black tw-ease-in tw-duration-300 hover:tw-text-[#bba371]"
+											className="hover:tw-cursor-pointer tw-bg-white tw-w-[30%] tw-text-black tw-py-2 tw-text-sm tw-font-light tw-tracking-wide hover:tw-bg-black tw-ease-in tw-duration-300 hover:tw-text-[#bba371]"
 											type="submit">
 											Send inquiry
 										</button>

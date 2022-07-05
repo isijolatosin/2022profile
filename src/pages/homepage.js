@@ -12,7 +12,7 @@ const Homepage = () => {
 	}, 2000)
 	return (
 		<div className="homeBg custome-font tw-h-screen tw-flex tw-items-center tw-justify-center">
-			<div className="tw-bg-black tw-h-[100%] md:tw-h-[85%] tw-w-[100%] md:tw-w-[85%]">
+			<div className="tw-bg-black tw-h-[100%] lg:tw-h-[90%] md:tw-w-[90%] md:tw-h-[85%] tw-w-[100%]">
 				<Layout>
 					{isShow ? (
 						<div className="fade tw-flex tw-flex-col md:tw-flex-row tw-h-[600px] tw-items-center tw-justify-center">
