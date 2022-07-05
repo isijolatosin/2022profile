@@ -36,7 +36,7 @@ const Aboutpage = () => {
 									corporate brand development, layout editing, typography,
 									concept creation, design and development. Incorporate creative
 									flair, originality, and a strong visual sense. Confidently
-									able to bring to simplicity strategic concepts to clients and
+									able to bring simplified strategic concepts to clients and
 									colleagues. Able to put up excellent presentation,
 									compilation, editing and design skills. Knowledge of most
 									types of graphic design software, including object oriented
