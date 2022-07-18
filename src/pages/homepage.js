@@ -130,9 +130,9 @@ const Homepage = () => {
 											<CgClose />
 										</div>
 									</div>
-									<p className="tw-text-center tw-leading-5 tw-text-xs tw-my-3 tw-font-bold tw-w-[80%] tw-mx-auto">
-										Please fill out the form below and we will get back to you
-										as soon as possible
+									<p className="tw-text-center tw-leading-5 tw-text-sm tw-mt-[50px] tw-my-3 tw-font-bold tw-w-[80%] tw-mx-auto">
+										Please fill out the form below and I will get back to you as
+										soon as possible
 									</p>
 									<div>
 										<input
