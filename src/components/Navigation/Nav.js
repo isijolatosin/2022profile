@@ -44,7 +44,6 @@ function Nav() {
 			<div className="wrapper md:tw-hidden tw-mt-[-12px]">
 				<input className="input" type="checkbox" id="input" />
 				<label for="input" className="button">
-					{/* <span className="text">My setting</span> */}
 					<span className="text">
 						<HiMenuAlt3 />
 					</span>

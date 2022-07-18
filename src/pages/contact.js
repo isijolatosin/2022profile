@@ -59,7 +59,7 @@ const Contact = () => {
 	}, 2000)
 	return (
 		<div className="homeBg custome-font lg:tw-h-screen tw-flex tw-items-center tw-justify-center">
-			<div className="tw-bg-black tw-h-[100%] md:tw-h-[85%] tw-w-[100%] md:tw-w-[85%]">
+			<div className="tw-bg-black tw-h-[100%] md:tw-h-[85%] tw-w-[100%] md:tw-w-[90%]">
 				<Layout>
 					{isShow ? (
 						<div className="fade relative tw-mt-[40px] tw-w-[80%] md:tw-w-[50%] tw-mx-auto">

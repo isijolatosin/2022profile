@@ -4,7 +4,7 @@ import { SiTreyarch } from 'react-icons/si'
 function Footer() {
 	return (
 		<footer>
-			<div className="tw-flex tw-justify-center tw-mt-[70px] tw-mb-[60px] md:tw-mt-[30px] tw-text-xs tw-font-bold tw-tracking-wider tw-text-neutral-500 ">
+			<div className="tw-flex tw-justify-center tw-mt-[-50px] md:tw-mt-[30px] tw-text-xs tw-font-bold tw-tracking-wider tw-text-neutral-500 ">
 				<div className="tw-pr-1 tw-border-r-2 tw-border-r-neutral-800 md:tw-flex">
 					<p className="">
 						&copy; {new Date().getUTCFullYear()} <span>oluwatosin</span>

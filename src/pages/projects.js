@@ -73,13 +73,25 @@ const Projects = () => {
 
 	return (
 		<div className="homeBg custome-font md:tw-h-screen tw-flex tw-items-center tw-justify-center">
-			<div className="tw-bg-black tw-h-[100%] lg:tw-h-[85%] tw-w-[100%] md:tw-w-[85%]">
+			<div className="tw-bg-black tw-h-[100%] lg:tw-h-[85%] tw-w-[100%] md:tw-w-[90%]">
 				<Layout>
 					{isShow ? (
-						<div className="tw-w-[90%] md:tw-w-[90%] md:tw-mx-auto tw-mx-auto tw-mt-[30px] md:tw-mt-[30px]">
+						<div className="tw-relative tw-w-[90%] md:tw-w-[90%] md:tw-mx-auto tw-mx-auto tw-mt-[30px] md:tw-mt-[30px]">
 							<h1 className="tw-text-white tw-mb-[30px] md:tw-mb-[70px] tw-text-2xl">
 								Projects
 							</h1>
+							{/* <div className="tw-absolute tw-bottom-[-150px] tw-right-[-150px] lg:tw-block tw-hidden">
+								<div className="container">
+									<div className="cubic">
+										<div className="surface one"></div>
+										<div className="surface two"></div>
+										<div className="surface three"></div>
+										<div className="surface four"></div>
+										<div className="surface five"></div>
+										<div className="surface six"></div>
+									</div>
+								</div>
+							</div> */}
 							<div className="fade tw-relative gallery tw-hidden lg:tw-w-[65vw] lg:tw-h-[50vmin] lg:tw-flex tw-mx-auto">
 								{imgArray.map((item, idx) => (
 									<>
