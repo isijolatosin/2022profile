@@ -68,7 +68,6 @@
 	/* display: block; */
 	border-radius: 50%;
 	object-fit: cover;
-	opacity: 0.5;
 }
 .img-wrapper::before {
 	content: '';

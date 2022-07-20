@@ -88,7 +88,7 @@ const Homepage = () => {
 			<div className="tw-bg-black tw-h-[100%] lg:tw-h-[85%] md:tw-w-[90%] md:tw-h-[85%] tw-w-[100%]">
 				<Layout>
 					{isShow ? (
-						<div className="fade tw-flex tw-flex-col md:tw-flex-row tw-h-[600px] tw-items-center md:tw-justify-center tw-pt-[70px] md:tw-mt-0">
+						<div className="fade tw-flex tw-flex-col md:tw-flex-row tw-h-[600px] tw-items-center md:tw-justify-center tw-pt-[120px] md:tw-pt-0">
 							<div className="img-wrapper tw-w-[150px] tw-h-[150px] md:tw-w-[250px] md:tw-h-[250px]">
 								<img src={profileImg} alt="" />
 							</div>

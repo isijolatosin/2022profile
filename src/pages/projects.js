@@ -71,13 +71,17 @@ const Projects = () => {
 		setLinkShow(false)
 	}
 
+	React.useEffect(() => {
+		window.scrollTo(0, 0)
+	}, [])
+
 	return (
 		<div className="homeBg custome-font md:tw-h-screen tw-flex tw-items-center tw-justify-center">
 			<div className="tw-bg-black tw-h-[100%] lg:tw-h-[85%] tw-w-[100%] md:tw-w-[90%]">
 				<Layout>
 					{isShow ? (
-						<div className="tw-relative tw-w-[90%] md:tw-w-[90%] md:tw-mx-auto tw-mx-auto tw-mt-[30px] md:tw-mt-[30px]">
-							<h1 className="tw-text-white tw-mb-[30px] md:tw-mb-[70px] tw-text-2xl">
+						<div className="tw-relative tw-w-[90%] md:tw-w-[90%] md:tw-mx-auto tw-mx-auto tw-pt-[90px] md:tw-pt-[30px]">
+							<h1 className="tw-text-white tw-mb-[30px] md:tw-mb-[40px] tw-text-2xl">
 								Projects
 							</h1>
 							{/* <div className="tw-absolute tw-bottom-[-150px] tw-right-[-150px] lg:tw-block tw-hidden">

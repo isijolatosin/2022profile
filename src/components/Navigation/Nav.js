@@ -25,11 +25,11 @@ function Nav() {
 	const path = window.location.pathname.split('/')?.[1]
 
 	return (
-		<div className="tw-flex tw-flex-row tw-justify-between tw-items-center tw-m-3 tw-mr-1">
-			<Link to="/" className="tw-text-[#bba371]">
+		<div className="tw-fixed md:tw-static tw-z-10 tw-bg-[rgba(0,0,0,0.9)] tw-left-[-12px] tw-top-[-12px] tw-h-[60px] md:tw-bg-transparent tw-w-[100%] tw-flex tw-flex-row tw-justify-between tw-items-center tw-m-3 tw-mr-1">
+			<Link to="/" className="tw-text-[#bba371] tw-ml-3">
 				<AiOutlineSisternode size={25} />
 			</Link>
-			<div className="tw-text-white md:tw-flex tw-hidden">
+			<div className="tw-text-white md:tw-flex tw-hidden tw-mr-5">
 				{links?.map((item) => (
 					<div
 						onClick={() => handleNav(item?.value)}
@@ -41,7 +41,7 @@ function Nav() {
 					</div>
 				))}
 			</div>
-			<div className="wrapper md:tw-hidden tw-mt-[-12px]">
+			<div className="wrapper md:tw-hidden">
 				<input className="input" type="checkbox" id="input" />
 				<label for="input" className="button">
 					<span className="text">
