@@ -16,12 +16,6 @@ const Projects = () => {
 	const joel = require("../assets/joel.jpeg");
 	const imgArray = [
 		{
-			url: amazon,
-			link: "https://amazonclonebyoluwatosin.vercel.app/",
-			id: "0",
-			name: "amazon",
-		},
-		{
 			url: modelEst,
 			link: "https://www.model-est.com/",
 			id: "1",
@@ -63,6 +57,12 @@ const Projects = () => {
 			link: "https://airbnb-clone-32e27.web.app/",
 			id: "7",
 			name: "AirBnB-Clone",
+		},
+		{
+			url: amazon,
+			link: "https://amazonclonebyoluwatosin.vercel.app/",
+			id: "8",
+			name: "amazon",
 		},
 	];
 
