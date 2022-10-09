@@ -1,101 +1,96 @@
-import React from 'react'
-import { BsLink45Deg } from 'react-icons/bs'
-import Layout from '../components/shared/Layout'
+import React from "react";
+import { BsLink45Deg } from "react-icons/bs";
+import Layout from "../components/shared/Layout";
 
 const Projects = () => {
-	const [isShow, setIsShow] = React.useState(false)
-	const [linkShow, setLinkShow] = React.useState(false)
-	const [linkKey, setLinkKey] = React.useState(null)
-	const airbnb = require('../assets/airbnb.jpeg')
-	const hairposey = require('../assets/hairposey.jpeg')
-	const hulu = require('../assets/hululu.jpeg')
-	const modelEst = require('../assets/modelEst.jpeg')
-	const netflix = require('../assets/netflix.jpeg')
-	const pvg = require('../assets/pvg.jpeg')
-	const joel = require('../assets/joel.jpeg')
+	const [isShow, setIsShow] = React.useState(false);
+	const [linkShow, setLinkShow] = React.useState(false);
+	const [linkKey, setLinkKey] = React.useState(null);
+	const airbnb = require("../assets/airbnb.jpeg");
+	const hairposey = require("../assets/hairposey.jpeg");
+	const hulu = require("../assets/hululu.jpeg");
+	const modelEst = require("../assets/modelEst.jpeg");
+	const amazon = require("../assets/amazon.jpeg");
+	const netflix = require("../assets/netflix.jpeg");
+	const pvg = require("../assets/pvg.jpeg");
+	const joel = require("../assets/joel.jpeg");
 	const imgArray = [
 		{
+			url: amazon,
+			link: "https://amazonclonebyoluwatosin.vercel.app/",
+			id: "0",
+			name: "amazon",
+		},
+		{
 			url: modelEst,
-			link: 'https://www.model-est.com/',
-			id: '1',
-			name: 'modelEst',
+			link: "https://www.model-est.com/",
+			id: "1",
+			name: "modelEst",
 		},
 		{
 			url: netflix,
-			link: 'https://netflix-clone-ced2a.web.app/',
-			id: '2',
-			name: 'Netflix-Clone',
+			link: "https://netflix-clone-ced2a.web.app/",
+			id: "2",
+			name: "Netflix-Clone",
 		},
 
 		{
 			url: hairposey,
-			link: 'https://www.hairposey.com/',
-			id: '3',
-			name: 'HairPosey',
+			link: "https://www.hairposey.com/",
+			id: "3",
+			name: "HairPosey",
 		},
 		{
 			url: hulu,
-			link: 'https://hulu-clone-demo-app.netlify.app/',
-			id: '4',
-			name: 'Hulu-Clone',
+			link: "https://hulu-clone-demo-app.netlify.app/",
+			id: "4",
+			name: "Hulu-Clone",
 		},
 		{
 			url: pvg,
-			link: 'https://www.pvginternational-s.com/',
-			id: '5',
-			name: 'pvg-internationalS',
+			link: "https://www.pvginternational-s.com/",
+			id: "5",
+			name: "pvg-internationalS",
 		},
 		{
 			url: joel,
-			link: 'https://joelarueyastudio.netlify.app/',
-			id: '6',
-			name: 'joelarueyastudio',
+			link: "https://joelarueyastudio.netlify.app/",
+			id: "6",
+			name: "joelarueyastudio",
 		},
 		{
 			url: airbnb,
-			link: 'https://airbnb-clone-32e27.web.app/',
-			id: '7',
-			name: 'AirBnB-Clone',
+			link: "https://airbnb-clone-32e27.web.app/",
+			id: "7",
+			name: "AirBnB-Clone",
 		},
-	]
+	];
 
 	setTimeout(() => {
-		setIsShow(true)
-	}, 2000)
+		setIsShow(true);
+	}, 2000);
 
 	const handleShowLink = (key) => {
-		setLinkKey(key)
-		setLinkShow(true)
-	}
+		setLinkKey(key);
+		setLinkShow(true);
+	};
 	const handleHideLink = () => {
-		setLinkShow(false)
-	}
+		setLinkShow(false);
+	};
 
 	React.useEffect(() => {
-		window.scrollTo(0, 0)
-	}, [])
+		window.scrollTo(0, 0);
+	}, []);
 
 	return (
 		<div className="homeBg custome-font md:tw-h-screen tw-flex tw-items-center tw-justify-center">
-			<div className="tw-bg-black tw-h-[100%] lg:tw-h-[85%] tw-w-[100%] md:tw-w-[90%]">
+			<div className="tw-bg-black tw-h-[100%] tw-w-[100%] md:tw-w-[90%]">
 				<Layout>
 					{isShow ? (
-						<div className="tw-relative tw-w-[90%] md:tw-w-[90%] md:tw-mx-auto tw-mx-auto tw-pt-[90px] md:tw-pt-[30px]">
-							<h1 className="tw-text-white tw-mb-[30px] md:tw-mb-[40px] tw-text-2xl">
+						<div className="tw-relative tw-w-[90%] md:tw-w-[90%] md:tw-mx-auto tw-mx-auto tw-pt-[90px] md:tw-pt-[10px]">
+							<h1 className="tw-text-white tw-mb-[20px] tw-text-2xl">
 								Projects
 							</h1>
-							{/* <div className="tw-absolute tw-bottom-[-150px] tw-right-[-150px] lg:tw-block tw-hidden">
-								<div className="container">
-									<div className="cubic">
-										<div className="surface one"></div>
-										<div className="surface two"></div>
-										<div className="surface three"></div>
-										<div className="surface four"></div>
-										<div className="surface five"></div>
-										<div className="surface six"></div>
-									</div>
-								</div>
-							</div> */}
 							<div className="fade tw-relative gallery tw-hidden lg:tw-w-[65vw] lg:tw-h-[50vmin] lg:tw-flex tw-mx-auto">
 								{imgArray.map((item, idx) => (
 									<>
@@ -155,7 +150,7 @@ const Projects = () => {
 				</Layout>
 			</div>
 		</div>
-	)
-}
+	);
+};
 
-export default Projects
+export default Projects;
